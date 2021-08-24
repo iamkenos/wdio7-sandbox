@@ -21,6 +21,10 @@ class LoginPage extends Page {
         await this.btnSubmit.click();
     }
 
+    broken() {
+        throw new Error("boom");
+    }
+
     /**
      * overwrite specifc options to adapt it to page object
      */
